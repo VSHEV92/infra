@@ -24,14 +24,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
-sudo apt-get install fonts-powerline
+sudo apt-get install fonts-powerline -y
 
 # -----------------------------------------------------------------------------------------------------------------
 # alacrityy
 
 # install
 sudo add-apt-repository ppa:aslatter/ppa -y
-sudo apt install alacritty
+sudo apt install alacritty -y
 
 # set as default terminal
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator $(which alacritty) 50
