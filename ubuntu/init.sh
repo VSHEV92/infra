@@ -17,7 +17,7 @@ sudo apt install zsh -y
 chsh -s $(which zsh)
 
 # install Oh My Zsh 
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+yes | sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" | exit
 
 # intall plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -45,4 +45,5 @@ sudo apt install tmux -y
 # neovim
 sudo apt install neovim -y
 
-
+# configuration finish 
+exit
