@@ -46,4 +46,10 @@ sudo apt install tmux -y
 sudo apt install neovim -y
 
 # configuration finish 
+cp ../zhs/.zshrc ~
+
+mkdir ~/.config/alacritty
+cp ../alacritty/alacritty.toml ~/.config/alacritty
+
 exit
+
