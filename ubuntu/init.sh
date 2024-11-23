@@ -1,6 +1,12 @@
 #!/bin/bash
 
 # -----------------------------------------------------------------------------------------------------------------
+# appearence and power
+gsettings set org.gnome.desktop.session idle-delay 0                           # disable powersave
+gsettings set org.gnome.desktop.background picture-uri `pwd`/ubuntu-blue.jpeg  # set wallpaper
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue'                # set color theme
+
+# -----------------------------------------------------------------------------------------------------------------
 # zsh
 
 # install
