@@ -56,5 +56,9 @@ cp ../zhs/.zshrc ~
 mkdir ~/.config/alacritty
 cp ../alacritty/alacritty.toml ~/.config/alacritty
 
+# remove infra repo
+cd ../..
+rm -Rf infra
+
 exit
 
