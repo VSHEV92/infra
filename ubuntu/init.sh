@@ -13,8 +13,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'          #
 # install
 sudo apt install zsh -y
 
-# set zsh as default shell
-chsh -s $(which zsh)
 
 # install Oh My Zsh 
 yes | sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" | exit
@@ -35,7 +33,7 @@ sudo apt install alacritty -y
 
 # set as default terminal
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator $(which alacritty) 50
-sudo update-alternatives --config x-terminal-emulator
+echo -ne '\n' | sudo update-alternatives --config x-terminal-emulator
 
 # -----------------------------------------------------------------------------------------------------------------
 # tmux
@@ -45,9 +43,16 @@ sudo apt install tmux -y
 # neovim
 sudo apt install neovim -y
 
+# -----------------------------------------------------------------------------------------------------------------
 # configuration finish 
+
+# set zsh as default shell
+chsh -s $(which zsh)
+
+# copy zsh sittings
 cp ../zhs/.zshrc ~
 
+# copy alacritty settings
 mkdir ~/.config/alacritty
 cp ../alacritty/alacritty.toml ~/.config/alacritty
 
