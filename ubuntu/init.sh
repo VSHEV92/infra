@@ -2,10 +2,19 @@
 
 # -----------------------------------------------------------------------------------------------------------------
 # appearence and power
-gsettings set org.gnome.desktop.session idle-delay 0                           # disable powersave
-gsettings set org.gnome.desktop.background picture-uri `pwd`/ubuntu-blue.jpeg  # set wallpaper
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'           # set color theme 
-gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'          # icon style 
+
+# disable powersave
+gsettings set org.gnome.desktop.session idle-delay 0
+
+# set wallpaper
+cp ubuntu-blue.jpeg ~/Pictures/ubuntu-blue.jpeg
+gsettings set org.gnome.desktop.background picture-uri ~/Pictures/ubuntu-blue.jpeg
+
+# set color theme 
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
+
+# icon style 
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'
 
 # -----------------------------------------------------------------------------------------------------------------
 # zsh
