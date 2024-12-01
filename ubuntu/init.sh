@@ -49,11 +49,8 @@ sudo apt install tmux -y
 
 # -----------------------------------------------------------------------------------------------------------------
 # neovim
-sudo apt install libfuse2 -y
 sudo apt install ripgrep -y
-wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-chmod u+x nvim.appimage
-sudo cp nvim.appimage /bin
+sudo apt install neovim -y
 
 # -----------------------------------------------------------------------------------------------------------------
 # configuration finish 
