@@ -66,6 +66,9 @@ cp ../zhs/.zshrc ~
 mkdir ~/.config/alacritty
 cp ../alacritty/alacritty.toml ~/.config/alacritty
 
+# copy nvim settings
+cp -r ../nvim ~/.config/nvim
+
 # remove infra repo
 cd ../..
 rm -Rf infra
