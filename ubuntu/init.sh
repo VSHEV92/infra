@@ -22,7 +22,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'
 # install
 sudo apt install zsh -y
 
-
 # install Oh My Zsh 
 yes | sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" | exit
 
