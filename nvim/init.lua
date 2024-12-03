@@ -26,3 +26,10 @@ configs.setup({
     indent = { enable = true },  
 })
 
+-- neo-tree
+vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal left toggle<CR>')
+
+-- lualine
+require('lualine').setup({
+  options = { theme  = 'dracula' },
+})
