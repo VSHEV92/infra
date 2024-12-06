@@ -54,3 +54,4 @@ lspconfig.verible.setup ({})
 
 vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { })
 vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, { })
+vim.keymap.set('n', '<leader>fo', vim.lsp.buf.format, { })
