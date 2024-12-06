@@ -23,7 +23,7 @@ local configs = require("nvim-treesitter.configs")
 configs.setup({
     ensure_installed = { "lua", "bash", "c", "verilog", "vhdl" },
     highlight = { enable = true },
-    indent = { enable = true },  
+    indent = { enable = true },
 })
 
 -- neo-tree
@@ -41,3 +41,16 @@ require('lualine').setup({
         lualine_z = {'location'}
     }
 })
+
+-- lspconfig
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = { "lua_ls", "verible" },
+})
+
+local lspconfig = require('lspconfig')
+lspconfig.lua_ls.setup ({})
+lspconfig.verible.setup ({})
+
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { })
+vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, { })
