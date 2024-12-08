@@ -12,3 +12,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-s
 source $ZSH/oh-my-zsh.sh
 
 # -----------------------------------------------------------------------------------------------------------------
+prompt_context(){}
+
+alias vim=nvim
+alias vi=nvim
