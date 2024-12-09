@@ -17,9 +17,7 @@ save_to_clipboard = true
 
 [font]
 size = 14
-
-# Colors (Tokyo Night Storm variant)
-# Source https//github.com/zatchheems/tokyo-night-alacritty-theme
+normal.family = "MesloLGS Nerd Font Mono"
 
 # Default colors
 [colors.primary]

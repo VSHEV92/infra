@@ -21,7 +21,12 @@ declare -a fonts=(
     UbuntuMono
 )
 
-version='2.1.0'
+version=$(curl -s 'https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest' | jq -r '.name')
+if [ -z "$version" ] || [ "$version" = "null" ]; then
+  version="v3.2.1"
+fi
+echo "latest version: $version"
+
 fonts_dir="${HOME}/.local/share/fonts"
 
 if [[ ! -d "$fonts_dir" ]]; then

@@ -11,3 +11,10 @@ vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { })
 vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, { })
 vim.keymap.set('n', '<leader>fo', vim.lsp.buf.format, { })
 
+-- buffer
+vim.keymap.set('n', '<TAB>', ':bn<CR>')
+vim.keymap.set('n', '<S-TAB>', ':bp<CR>')
+
+-- search 
+vim.keymap.set('n', '<leader>cs', ':noh<CR>')
+
