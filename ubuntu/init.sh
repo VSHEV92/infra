@@ -50,6 +50,8 @@ sudo apt install tmux -y
 # -----------------------------------------------------------------------------------------------------------------
 # neovim
 sudo apt install ripgrep -y
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
 sudo apt install neovim -y
 
 # -----------------------------------------------------------------------------------------------------------------
