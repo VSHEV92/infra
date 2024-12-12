@@ -15,6 +15,12 @@ vim.keymap.set('n', '<leader>fo', vim.lsp.buf.format, { })
 vim.keymap.set('n', '<TAB>', ':bn<CR>')
 vim.keymap.set('n', '<S-TAB>', ':bp<CR>')
 
+-- windows
+vim.keymap.set('n', '<C-S-Up>', ':wincmd k<CR>')
+vim.keymap.set('n', '<C-S-Down>', ':wincmd j<CR>')
+vim.keymap.set('n', '<C-S-Left>', ':wincmd h<CR>')
+vim.keymap.set('n', '<C-S-Right>', ':wincmd l<CR>')
+
 -- search 
 vim.keymap.set('n', '<leader>cs', ':noh<CR>')
 
