@@ -10,7 +10,6 @@ Run for host machine
     sudo apt update
     sudo apt upgrade -y
     sudo apt install git -y
-    sudo apt install build-essential -y
     git clone https://github.com/VSHEV92/infra.git
     cd infra/ubuntu
     source init.sh
