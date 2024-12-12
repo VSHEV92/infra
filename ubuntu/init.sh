@@ -23,7 +23,7 @@ gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'
 sudo apt install zsh -y
 
 # install Oh My Zsh 
-yes | sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" | exit
+yes | sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 # intall plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -74,6 +74,9 @@ cp ../alacritty/alacritty.toml ~/.config/alacritty
 
 # copy nvim settings
 cp -r ../nvim ~/.config/nvim
+
+# copy tmux sittings
+cp ../tmux/.tmux.conf ~
 
 # remove infra repo
 cd ../..
