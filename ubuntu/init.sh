@@ -70,7 +70,7 @@ source nerd-fonts.sh
 chsh -s $(which zsh)
 
 # copy zsh sittings
-cp ../zhs/.zshrc ~
+cp ../zsh/.zshrc ~
 
 # copy alacritty settings
 mkdir ~/.config/alacritty
