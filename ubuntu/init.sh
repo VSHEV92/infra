@@ -1,9 +1,4 @@
 #!/bin/bash
-
-# -----------------------------------------------------------------------------------------------------------------
-# base packages
-sudo apt install build-essential -y
-sudo apt install npm -y
     
 # -----------------------------------------------------------------------------------------------------------------
 # appearence and power
@@ -20,6 +15,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
 
 # icon style 
 gsettings set org.gnome.desktop.interface icon-theme 'Yaru-blue-dark'
+
+# -----------------------------------------------------------------------------------------------------------------
+# base packages
+sudo apt install build-essential -y
+sudo apt install npm -y
 
 # -----------------------------------------------------------------------------------------------------------------
 # zsh
