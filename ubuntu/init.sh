@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------------------------------------------
 # base packages
 sudo apt install build-essential -y
+sudo apt install npm -y
     
 # -----------------------------------------------------------------------------------------------------------------
 # appearence and power
@@ -55,6 +56,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # -----------------------------------------------------------------------------------------------------------------
 # neovim
 sudo apt install ripgrep -y
+sudo npm i -g bash-language-server
+
 echo -ne '\n' | sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt install neovim -y
