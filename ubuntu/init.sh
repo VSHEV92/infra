@@ -85,9 +85,5 @@ cp -r ../nvim ~/.config/nvim
 # copy tmux sittings
 cp ../tmux/.tmux.conf ~
 
-# remove infra repo
-cd ../..
-rm -Rf infra
-
 exit
 
