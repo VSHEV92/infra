@@ -12,3 +12,6 @@ cd ~/esp/esp-idf
 
 # add idf init to zshrc
 echo 'source ~/esp/esp-idf/export.sh' >> ~/.zshrc
+
+# add user to dialout group
+sudo usermod -a -G dialout $USER
