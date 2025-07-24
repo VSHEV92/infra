@@ -17,5 +17,6 @@ echo 'source ~/esp/esp-idf/export.sh' >> ~/.zshrc
 cd /etc/udev/rules.d
 sudo wget https://github.com/espressif/openocd-esp32/blob/master/contrib/60-openocd.rules
 
-# add user to dialout group
+# add user to dialout and plugdev groups
 sudo usermod -a -G dialout $USER
+sudo usermod -a -G plugdev $USER
